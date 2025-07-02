@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 01</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/form.php" method="post" autocomplete="on">
+        <p>
+            <label for="i-user">Usuario</label>
+            <input type="text" name="user" id="i-user" required minlength="5" maxlength="13" title="Usuário deve ter entre 5 e 13 caracteres alfanuméricos." placeholder="User" autocomplete="username">
+        </p>
+        <p>
+            <label for="i-pass">Senha</label>
+            <input type="password" name="pass" id="i-pass" required minlength="5" maxlength="13" title="Usuário deve ter entre 5 e 13 caracteres alfanuméricos." placeholder="Password" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
